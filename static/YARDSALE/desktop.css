@@ -1,0 +1,43 @@
+.logo, .logo-container {
+    display:none;
+}
+
+#botalt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#navmovile, #secondnavmovile {
+    display: none;
+}
+
+#navmain {
+    width: 100;
+    display: flex;
+    align-items: center;
+}
+
+#barras {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#mainstart {
+    width: 100%;
+    align-items: flex-start;
+    margin: 0px 50px;
+}
+
+body {
+    padding: 8px 40px;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+}
+
+.productext {
+    font-size: var(--lg);
+}
