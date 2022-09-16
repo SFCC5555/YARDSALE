@@ -29,7 +29,7 @@
             </div>
             <div id="nav2">
                 <h2 onclick="mostrarMenu();">sfcc.5555@gmail.com</h2>
-                <img src="static/YARDSALE/icons/icon_shopping_cart.svg" alt="YARD SALE" class="icon">
+                <img onclick="mostrarMyOrderContainer();" src="static/YARDSALE/icons/icon_shopping_cart.svg" alt="YARD SALE" class="icon">
             </div>
         </nav>
         <div id="contenedorMenu" class="none">
@@ -49,11 +49,53 @@
             <a class="menu1">My account</a>
             <a href="/login.html" class="menu2">Sign out</a>
         </div>
+        <div id="contenedormisordenes" class="none">
+            <h1><span onclick="mostrarMyOrderContainer();" class="myOrderArrow"></span>My order</h1>
+            <div class="productMyOrderContainer">
+                <div class="myOrderCardOne">
+                    <img src="/static/YARDSALE/productos/bicicleta.jpg" alt="bike" width="85px">
+                    <p>Bike</p>
+                </div>
+                <div class="myOrderCardTwo">
+                    <h1>$30,00</h1>
+                    <span></span>
+                </div>
+            </div>
+            <div class="productMyOrderContainer">
+                <div class="myOrderCardOne">
+                    <img src="/static/YARDSALE/productos/bicicleta.jpg" alt="bike" width="85px">
+                    <p>Bike</p>
+                </div>
+                <div class="myOrderCardTwo">
+                    <h1>$30,00</h1>
+                    <span></span>
+                </div>
+            </div>
+            <div class="productMyOrderContainer">
+                <div class="myOrderCardOne">
+                    <img src="/static/YARDSALE/productos/bicicleta.jpg" alt="bike" width="85px">
+                    <p>Bike</p>
+                </div>
+                <div class="myOrderCardTwo">
+                    <h1>$30,00</h1>
+                    <span></span>
+                </div>
+            </div>
+            <div class="productMyOrderContainer" style="justify-content: space-around;">
+                <div class="myOrderCardOne">
+                    <h2 style="color: black;">Total</h2>
+                </div>
+                <div class="myOrderCardTwo">
+                    <h1>$560,00</h1>
+                </div>
+            </div>
+            <input type="submit" value="Checkout" class="boton">
+        </div>
         <main id="mainstart">
             <nav id="navmovile">
                 <img onclick="mostrarMenuMovile();"src="static/YARDSALE/icons/icon_menu.svg" alt="menú" class="icon">
                 <img src="static/YARDSALE/logos/logo_yard_sale.svg" alt="YARD SALE" class="icon">
-                <img src="static/YARDSALE/icons/icon_shopping_cart.svg" alt="cart" class="icon">
+                <img onclick="mostrarMyOrderContainer();" src="static/YARDSALE/icons/icon_shopping_cart.svg" alt="cart" class="icon">
             </nav>
             <section id="barras">
                 <form id="search">

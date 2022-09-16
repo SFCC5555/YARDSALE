@@ -45,3 +45,7 @@ body {
 .menu-container {
     display: flex;
 }
+
+.myOrderContainer {
+    width: 30%;
+}

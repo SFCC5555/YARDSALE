@@ -271,7 +271,7 @@ nav {
 
 .card >img {
     width: 100%;
-    border-radius: 15%;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
 }
@@ -302,12 +302,12 @@ img:hover {
     display: none;
     flex-direction: column;
     align-items: flex-end;
-    border: 0.5px solid rgb(100, 99, 99);
+    border: 1px solid var(--color-texto);
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(89,73,30,0.16);
     padding-right: 10px;
     position: absolute;
-    top: 40px;
+    top: 47.5px;
     right: 10%;
     background-color: var(--color-a);
     cursor: default;
@@ -319,12 +319,12 @@ img:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border: 0.5px solid rgb(100, 99, 99);
+    border: 0.5px solid var(--color-texto);
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(89,73,30,0.16);
     padding: 10px;
     position: absolute;
-    top: 35px;
+    top: 37px;
     left: 0%;
     background-color: var(--color-a);
     cursor: default;
@@ -357,3 +357,60 @@ img:hover {
     transform: scale(1.03);
 }
 
+.myOrderContainer {
+    width: 100%;
+    border: 0.5px solid var(--color-texto);
+    box-shadow: 0px 4px 8px rgba(89,73,30,0.16);
+    background-color: var(--color-a);
+    padding: 15px;
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top: 47.5px;
+    right: 0;
+    border-radius: 10px;
+}
+
+.productMyOrderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.myOrderArrow {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-repeat: no-repeat;
+    background-image: url(./icons/flechita.svg);
+    margin-right:10px;
+}
+
+.productMyOrderContainer img {
+    border-radius: 15px;
+}
+
+.myOrderCardOne {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    font-size: var(--sm);
+    color: var(--color-1);
+}
+
+.myOrderCardTwo{
+    display: flex;
+    align-items: center;
+}
+
+.myOrderCardTwo span {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-repeat: no-repeat;
+    background-image: url(/static/YARDSALE/icons/icon_close.png);
+    margin-left:10px;
+    transform: translate(0px,-4px);
+}
