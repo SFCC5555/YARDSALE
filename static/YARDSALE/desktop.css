@@ -41,3 +41,7 @@ body {
 .productext {
     font-size: var(--lg);
 }
+
+.menu-container {
+    display: flex;
+}
