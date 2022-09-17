@@ -2,6 +2,8 @@ let cm=document.getElementById("contenedorMenu");
 let cmv=document.getElementById("contenedorMenuMovile");
 let moc=document.getElementById("contenedormisordenes");
 let cc=document.querySelector(".cards-container");
+let pdc=document.getElementById("contenedorDetalleProducto");
+let pn=document.getElementById("nombreProducto")
 
 function mostrarMenu() {
     cm.classList.toggle("menu-container");
@@ -114,6 +116,8 @@ for (product of productlist) {
 
     const img =document.createElement("img");
     img.setAttribute("src",product.image);
+    img.setAttribute("onclick","renderProductDetail();")
+
 
     const productCaja=document.createElement("div");
     productCaja.classList.add("caja");
@@ -149,3 +153,10 @@ for (product of productlist) {
 }
 
 renderProducts();
+
+function renderProductDetail()
+{
+    pdc.classList.toggle("productDetailContainer")    
+    pn.innerText=productlist[0].name
+
+}
