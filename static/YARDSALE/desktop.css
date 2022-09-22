@@ -30,7 +30,7 @@
 }
 
 body {
-    padding: 8px 40px;
+    padding: 0px 40px;
 }
 
 .card {
@@ -52,4 +52,14 @@ body {
 
 .productDetailContainer {
     width: 30%;
+    top:40px;
+}
+
+#barras {
+    width:fit-content;
+    translate: -40px;
+} 
+
+.cards-container {
+    margin-top: 80px;
 }
