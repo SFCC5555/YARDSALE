@@ -380,7 +380,7 @@ img:hover {
     display:flex;
     flex-direction: column;
     position: absolute;
-    top: 40;
+    top: 150px;
     right: 0;
     border-radius: 10px;
     position: fixed;

@@ -4,12 +4,20 @@ let moc=document.getElementById("contenedormisordenes");
 let cc=document.querySelector(".cards-container");
 let pdc=document.getElementById("contenedorDetalleProducto");
 let pn=document.getElementById("nombreProducto")
+let pdclose=document.querySelector(".productDetailCloseContainer")
+
+pdclose.addEventListener("click",renderProductDetail);
 
 function mostrarMenu() {
     cm.classList.toggle("menu-container");
     if (moc.className=="none myOrderContainer")
     {
         moc.classList.toggle("myOrderContainer");
+    }
+
+    if (pdc.className=="none productDetailContainer")
+    {
+        pdc.classList.toggle("productDetailContainer");
     }
 }
 
@@ -19,6 +27,11 @@ function mostrarMenuMovile() {
     if (moc.className=="none myOrderContainer")
     {
         moc.classList.toggle("myOrderContainer");
+    }
+
+    if (pdc.className=="none productDetailContainer")
+    {
+        pdc.classList.toggle("productDetailContainer");
     }
 }
 
@@ -32,6 +45,11 @@ function mostrarMyOrderContainer() {
     if (cmv.className=="none menu-movile-container")
     {
         cmv.classList.toggle("menu-movile-container");
+    }
+
+    if (pdc.className=="none productDetailContainer")
+    {
+        pdc.classList.toggle("productDetailContainer");
     }
 }
 
@@ -116,7 +134,7 @@ for (product of productlist) {
 
     const img =document.createElement("img");
     img.setAttribute("src",product.image);
-    img.setAttribute("onclick","renderProductDetail();")
+    img.addEventListener("click",renderProductDetail);
 
 
     const productCaja=document.createElement("div");
@@ -154,9 +172,32 @@ for (product of productlist) {
 
 renderProducts();
 
-function renderProductDetail()
+function renderProductDetail(evento)
 {
-    pdc.classList.toggle("productDetailContainer")    
-    pn.innerText=productlist[0].name
 
+    if (evento.target.localName=="img")
+    {
+        pdc.classList.add("productDetailContainer");  
+        pn.innerText=product.name;
+        console.log(productlist);
+    }
+    else {
+        pdc.classList.toggle("productDetailContainer");
+
+    }
+
+    if (moc.className=="none myOrderContainer")
+    {
+        moc.classList.toggle("myOrderContainer");
+    }
+
+    if (cm.className=="none menu-container")
+    {
+        cm.classList.toggle("menu-container");
+    }
+
+    if (cmv.className=="none menu-movile-container")
+    {
+        cmv.classList.toggle("menu-movile-container");
+    }
 }

@@ -48,6 +48,7 @@ body {
 
 .myOrderContainer {
     width: 30%;
+    top:40px;
 }
 
 .productDetailContainer {
